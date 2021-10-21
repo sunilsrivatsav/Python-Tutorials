@@ -1,7 +1,7 @@
 list = [1,6,9,15,34,55,78]
 list.sort()
 
-pos=-1
+position=-1
 def binarysearch(n,list):
     Lower = 0
     Upper = len(list)-1
@@ -9,7 +9,7 @@ def binarysearch(n,list):
         #### calculate mid and compare the value
         mid = (Lower+Upper)//2
         if list[mid]==n:
-            globals()['pos']=mid
+            globals()['position']=mid
             return True
         else:
             ####  move the lower bound right
@@ -22,6 +22,6 @@ def binarysearch(n,list):
 
 n = 46
 if binarysearch(n,list):
-    print("found at: ", pos)
+    print("found at: ", position)
 else:
     print("not found")
