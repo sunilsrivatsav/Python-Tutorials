@@ -1,3 +1,4 @@
+######## Basic formulation ##################
 num = int(input("enter a number"))
 
 
@@ -11,7 +12,29 @@ def Factorial(n):
         print("Factorial of", i, "is", fact)
     
 
-if num <= 0 :
+if num < 0 :
     print("Enter positive number")
+elif num == 0:
+    print("Factorial of", num, "is 1")
 else:
-    factorial = Factorial(num)
+    Factorial(num)
+
+##############################################
+############# Recurssion #####################
+
+# def Factorial(n):
+#     if n==1:
+#         return n
+#     else:
+#         return n*Factorial(n-1)
+
+# num = int(input("enter a number"))
+# if num < 0 :
+#     print("Enter positive number")
+# elif num == 0:
+#     print("Factorial of", num, "is 1")
+# else:
+#     factorial = Factorial(num)
+#     print("Factorial of", num, "is:",factorial)
+
+###################################################
